@@ -1,0 +1,145 @@
+.contacts .wrapper {
+  flex-direction: column;
+  align-items: start;
+}
+.contacts .breadcrumb {
+  margin-top: 2.4375rem;
+  margin-bottom: 3rem;
+}
+.contacts .title {
+  margin-bottom: 6.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.6875rem;
+  color: #1B1B1B;
+}
+.contacts .title--litle {
+  margin-bottom: 2.1875rem;
+}
+.contacts .team-table {
+  width: 100%;
+  margin-bottom: 9.4375rem;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+}
+.contacts .team-table td {
+  border: 1px solid #D9D9D9;
+}
+.contacts .team-table .name-title {
+  width: 27.75rem;
+  height: 4.0625rem;
+  vertical-align: middle;
+  background-color: #d9d9d9;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  text-align: center;
+  color: #1B1B1B;
+}
+.contacts .team-table .name-value {
+  width: 27.75rem;
+  height: 4.1875rem;
+  font-family: "Roboto" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  text-align: center;
+  vertical-align: middle;
+  color: #1B1B1B;
+}
+.contacts .team-table .who-title {
+  width: 25.4375rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #5F7489;
+  text-align: center;
+  vertical-align: middle;
+}
+.contacts .team-table .contacts-title {
+  width: 25.4375rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #5F7489;
+  text-align: center;
+  vertical-align: middle;
+}
+.contacts .team-table .value {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  text-align: center;
+  vertical-align: middle;
+  color: #1B1B1B;
+}
+.contacts .content {
+  width: 100%;
+  margin-bottom: 14.0625rem;
+  display: flex;
+  align-items: start;
+  -moz-column-gap: 3.75rem;
+       column-gap: 3.75rem;
+  justify-content: space-between;
+}
+.contacts .content .info {
+  font-family: "Roboto" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #333;
+}
+.contacts .content .map {
+  height: 20rem;
+  width: 100%;
+  max-width: 42rem;
+}
+.contacts .content .subtitle {
+  margin-bottom: 0.9375rem;
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.0625rem;
+  color: #333;
+}
+.contacts .content .icon {
+  margin-right: 0.625rem;
+}
+.contacts .content address {
+  display: flex;
+  align-items: start;
+}
+.contacts .content .timedate {
+  display: flex;
+  align-items: start;
+}
+.contacts .content .telnumber {
+  display: flex;
+  align-items: start;
+}
+.contacts .content .buy-btn {
+  width: 12.5rem;
+  height: 3rem;
+  margin-top: 2.0625rem;
+  background-color: #5F7489;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.contacts .content .buy-btn:active {
+  transition: 0.13s;
+  transform: translateY(4px);
+}/*# sourceMappingURL=contacts.css.map */
