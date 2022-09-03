@@ -1,0 +1,54 @@
+@import '../vars';
+
+.bc-list {
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+
+    .bc-item {
+        position: relative;
+
+        .bc-link {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $light-grey;
+
+            &:hover {
+                transition: .13s;
+                color: $dark;
+            }
+        }
+    }
+
+    .bc-item:not(:first-child)::before {
+        position: relative;
+        left: -7px;
+        content: '/';
+        display: inline-block;
+        color: $light-grey;
+
+    }
+}
+
+.news .wrapper {
+    .bc-list {
+        margin-top: 39px;
+        margin-bottom: 49px;
+    }
+
+    flex-direction: column;
+    align-items: start;
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: 36px;
+    }
+
+    .card-list {
+        margin-bottom: 125px;
+        row-gap: 6.0625rem;
+    }
+}

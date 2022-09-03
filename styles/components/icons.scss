@@ -1,0 +1,70 @@
+.icon {
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.calendar-icon {
+    width: 19px;
+    height: 19px;
+    background-image: url(/src/assets/icons/calendar-icon.svg);
+}
+
+.location-icon {
+    width: 18px;
+    height: 22px;
+    background-image: url(/src/assets/icons/geo-icon.svg);
+}
+
+.telegram-icon {
+    background-image: url(/src/assets/icons/telegram-icom.svg);
+    width: 30px;
+    height: 30px;
+}
+
+.vk-icon {
+    background-image: url(/src/assets/icons/vk-icon.svg);
+    width: 30px;
+    height: 30px;
+}
+
+.ok-icon {
+    background-image: url(/src/assets/icons/ok-icon.svg);
+    width: 30px;
+    height: 30px;
+}
+
+.trip-icon {
+    background-image: url(/src/assets/icons/trip-icon.svg);
+    width: 34px;
+    height: 25px;
+}
+
+.ticket-icon {
+    margin-right: 20px;
+    width: 20px;
+    height: 28px;
+    background-image: url(/src/assets/icons/header-icon-ticket.svg);
+}
+
+.join-icon {
+    width: 37px;
+    height: 29px;
+    margin-right: 20px;
+    background-image: url(/src/assets/icons/header-icon-join.svg);
+}
+
+.search-icon {
+    width: 26px;
+    height: 24px;
+    background-image: url(/src/assets/icons/header-icon-search.svg);
+    cursor: pointer;
+}
+
+.close-icon {
+    width: 26px;
+    height: 26px;
+    background-image: url(/src/assets/icons/close-icon.svg);
+    cursor: pointer;
+}

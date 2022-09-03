@@ -1,0 +1,61 @@
+@import '../vars.scss';
+
+.news-detail {
+    .wrapper {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .breadcrumb {
+        margin-top: 49px;
+    }
+
+    .title {
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.6875rem;
+        color: $dark;
+        margin-top: 49px;
+        margin-bottom: 73px;
+    }
+
+    .date {
+        margin-bottom: 27px;
+    }
+
+    .text-content {
+        margin-bottom: 76px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 1.5rem;
+    }
+
+    .text {
+        font-family: 'Roboto',
+            'Gill Sans',
+            'Gill Sans MT',
+            Calibri,
+            'Trebuchet MS',
+            sans-serif !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.1875rem;
+    }
+
+    .swiper-slide {
+        .image {
+            width: 100%;
+            max-width: 607px;
+            object-fit: cover;
+        }
+    }
+
+    .swiper-navigation {
+        margin-top: 80px;
+        margin-bottom: 105px;
+    }
+}
