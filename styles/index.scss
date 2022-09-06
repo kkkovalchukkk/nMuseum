@@ -37,12 +37,8 @@
 // Main
 
 
-.main {
-    margin-top: 20px;
-}
-
 .title {
-    margin-bottom: 35px;
+    margin-bottom: 2.25rem;
     font-family: 'Prata',
         'Roboto',
         'Gill Sans',
@@ -70,12 +66,17 @@
 
 @import './components/findbox.scss';
 
+// Breadcrumb
+
+@import './components/breadcrumb.scss';
+
 // Banner 
 
 .banner {
     position: relative;
     width: 100%;
-    min-height: 520px;
+    min-height: 32.5rem;
+    margin-top: 3.625rem;
     background-image: url(../assets/img/bg/banner-bg.jpg);
     background-position: left;
     background-size: cover;
@@ -132,7 +133,7 @@
         flex-wrap: wrap;
 
         .text-content {
-            max-width: 508px;
+            max-width: 26.25rem;
             display: flex;
             flex-direction: column;
             align-items: start;
@@ -149,7 +150,7 @@
             sans-serif !important;
         font-style: normal;
         font-weight: 400;
-        font-size: 1rem;
+        font-size: .75rem;
         line-height: 1.1875rem;
         color: #333333;
     }
@@ -172,7 +173,7 @@
     }
 
     .title {
-        margin-bottom: 128px;
+        margin-bottom: 5.3125rem;
     }
 
     .card-list {

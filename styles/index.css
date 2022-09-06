@@ -534,7 +534,7 @@ template {
 }
 .header .top-header .main-nav-list .nav-link:hover {
   transition: 0.13s;
-  color: #5F7489 !important;
+  color: #002E48 !important;
 }
 .header .top-header .main-nav-list .nav-link-join {
   font-family: "Roboto";
@@ -543,10 +543,6 @@ template {
   font-size: 0.8rem;
   line-height: 23px;
   color: #1B1B1B;
-}
-.header .top-header .main-nav-list .nav-link-join:hover {
-  transition: 0.13s;
-  color: #5F7489 !important;
 }
 .header .bottom-header {
   width: 100%;
@@ -687,6 +683,7 @@ template {
   width: 26px;
   height: 26px;
   background-image: url(/assets/icons/close-icon.svg);
+  cursor: pointer;
 }
 
 .map-icon {
@@ -707,6 +704,11 @@ template {
   background-image: url(/assets/icons/tel-icon.svg);
 }
 
+.next-icon {
+  width: 45px;
+  height: 20px;
+}
+
 .wrapper {
   width: 100%;
   height: 100%;
@@ -716,12 +718,8 @@ template {
   padding: 0 20px;
 }
 
-.main {
-  margin-top: 20px;
-}
-
 .title {
-  margin-bottom: 35px;
+  margin-bottom: 2.25rem;
   font-family: "Prata", "Roboto", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
   font-style: normal;
   font-weight: 400;
@@ -951,10 +949,45 @@ template {
   display: none !important;
 }
 
+.bc-list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 17px;
+       column-gap: 17px;
+}
+.bc-list .bc-item {
+  position: relative;
+}
+.bc-list .bc-item .bc-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #999;
+}
+.bc-list .bc-item .bc-link:hover {
+  transition: 0.13s;
+  color: #1B1B1B;
+}
+.bc-list .bc-item:not(:first-child)::before {
+  position: relative;
+  left: -7px;
+  content: "/";
+  display: inline-block;
+  color: #999;
+}
+
+.breadcrumb {
+  margin-top: 2.4375rem;
+  margin-bottom: 3rem;
+}
+
 .banner {
   position: relative;
   width: 100%;
-  min-height: 520px;
+  min-height: 32.5rem;
+  margin-top: 3.625rem;
   background-image: url(../assets/img/bg/banner-bg.jpg);
   background-position: left;
   background-size: cover;
@@ -1001,7 +1034,7 @@ template {
   flex-wrap: wrap;
 }
 .about-mus .content .text-content {
-  max-width: 508px;
+  max-width: 26.25rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -1011,7 +1044,7 @@ template {
   font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.75rem;
   line-height: 1.1875rem;
   color: #333333;
 }
@@ -1032,7 +1065,7 @@ template {
   align-items: start;
 }
 .preview .title {
-  margin-bottom: 128px;
+  margin-bottom: 5.3125rem;
 }
 .preview .card-list {
   row-gap: 6.0625rem;
@@ -1288,46 +1321,9 @@ template {
   align-items: start;
 }
 
-.bc-list {
-  display: flex;
-  align-items: center;
-  -moz-column-gap: 17px;
-       column-gap: 17px;
-}
-.bc-list .bc-item {
-  position: relative;
-}
-.bc-list .bc-item .bc-link {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #999;
-}
-.bc-list .bc-item .bc-link:hover {
-  transition: 0.13s;
-  color: #1B1B1B;
-}
-.bc-list .bc-item:not(:first-child)::before {
-  position: relative;
-  left: -7px;
-  content: "/";
-  display: inline-block;
-  color: #999;
-}
-
 .news .wrapper {
   flex-direction: column;
   align-items: start;
-}
-.news .wrapper .bc-list {
-  margin-top: 39px;
-  margin-bottom: 49px;
-}
-.news .wrapper .title {
-  font-size: 2rem;
-  margin-bottom: 36px;
 }
 .news .wrapper .card-list {
   margin-bottom: 125px;
@@ -1337,19 +1333,6 @@ template {
 .news-detail .wrapper {
   flex-direction: column;
   align-items: start;
-}
-.news-detail .breadcrumb {
-  margin-top: 49px;
-}
-.news-detail .title {
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.6875rem;
-  color: #1B1B1B;
-  margin-top: 49px;
-  margin-bottom: 73px;
 }
 .news-detail .date {
   margin-bottom: 27px;
@@ -1383,18 +1366,6 @@ template {
   flex-direction: column;
   align-items: start;
 }
-.gallery .breadcrumb {
-  margin-top: 49px;
-  margin-bottom: 49px;
-}
-.gallery .title {
-  margin-bottom: 149px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.6875rem;
-  color: #1B1B1B;
-}
 .gallery .photo-list {
   display: flex;
   -moz-column-gap: 26px;
@@ -1427,6 +1398,16 @@ template {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.gallery .photo-list .photo-item .img-link:hover + .see-all {
+  color: #1B1B1B;
+  background-color: #5F7489;
+}
+.gallery .photo-list .photo-item .img-link:hover + .see-all svg circle {
+  stroke: #1B1B1B !important;
+}
+.gallery .photo-list .photo-item .img-link:hover + .see-all svg path {
+  stroke: #1B1B1B !important;
+}
 .gallery .photo-list .photo-item .see-all {
   width: 100%;
   height: 48px;
@@ -1441,16 +1422,29 @@ template {
   justify-content: center;
   border: 1px solid #5F7489;
   cursor: pointer;
+  transition: background-color 0.13s ease, color 0.13s ease;
 }
 .gallery .photo-list .photo-item .see-all:hover {
   color: #1B1B1B;
-  transition: 0.13s;
+  background-color: #5F7489;
+}
+.gallery .photo-list .photo-item .see-all:hover svg circle {
+  stroke: #1B1B1B !important;
+}
+.gallery .photo-list .photo-item .see-all:hover svg path {
+  stroke: #1B1B1B !important;
 }
 .gallery .photo-list .photo-item .see-all:active {
-  transition: 0.13s;
+  transition: 0.15s;
   transform: translateY(4px);
 }
-.gallery .see-more-btn {
+.gallery .photo-list .photo-item .see-all .next-icon {
+  margin-left: 1.75rem;
+}
+.gallery .photo-list .photo-item .see-all svg circle {
+  stroke: #999;
+}
+.gallery .load-btn {
   width: 100%;
   max-width: 206px;
   height: 48px;
@@ -1470,33 +1464,22 @@ template {
   border: 1px solid #5F7489;
   cursor: pointer;
 }
-.gallery .see-more-btn:active {
+.gallery .load-btn:active {
   transition: 0.13s;
   transform: translateY(4px);
 }
-.gallery .see-more-btn:hover {
+.gallery .load-btn:hover {
   transition: 0.13s;
   color: #1B1B1B;
+  background-color: #5F7489;
 }
 
 .expo .wrapper {
   flex-direction: column;
   align-items: start;
 }
-.expo .breadcrumb {
-  margin-top: 2.4375rem;
-  margin-bottom: 3.125rem;
-}
-.expo .title {
-  margin: 0 !important;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.6875rem;
-  color: #1B1B1B;
-}
 .expo .menu-list {
-  margin-top: 3.875rem;
+  margin-top: 1.6875rem;
   margin-bottom: 5.625rem;
   display: flex;
   align-items: center;
@@ -1512,6 +1495,10 @@ template {
   font-size: 1rem;
   line-height: 1.1875rem;
   color: #333;
+  transition: color 0.13s ease;
+}
+.expo .menu-list button:hover {
+  color: #5F7489 !important;
 }
 .expo .images {
   width: 100%;
@@ -1543,17 +1530,6 @@ template {
   flex-direction: column;
   align-items: start;
 }
-.history .breadcrumb {
-  margin-top: 2.4375rem;
-  margin-bottom: 3rem;
-}
-.history .title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.6875rem;
-  color: #1B1B1B;
-}
 .history nav {
   width: 100%;
   height: 50px;
@@ -1565,12 +1541,11 @@ template {
   display: flex;
   align-items: center;
   justify-content: start;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
 }
 .history .page-list .page-btn {
   height: 3.125rem;
-  max-width: 11.6875rem;
+  max-width: 215px;
+  padding: 0px 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
@@ -1578,6 +1553,11 @@ template {
   color: #333;
   text-align: left;
   cursor: pointer;
+}
+.history .page-list .page-btn:hover {
+  transition: 0.13s;
+  color: #fff !important;
+  background: rgba(95, 116, 136, 0.5019607843) !important;
 }
 .history .text {
   max-width: 54.375rem;
@@ -1601,18 +1581,6 @@ template {
 .prices .wrapper {
   flex-direction: column;
   align-items: start;
-}
-.prices .breadcrumb {
-  margin-top: 2.4375rem;
-  margin-bottom: 3rem;
-}
-.prices .title {
-  margin-bottom: 4.8125rem;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.6875rem;
-  color: #1B1B1B;
 }
 .prices .events-list {
   margin-bottom: 6.1875rem;
@@ -1686,7 +1654,6 @@ template {
 }
 .prices .offer-table {
   width: 100%;
-  margin-bottom: 7.0625rem;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
 }
 .prices .offer-table td {
@@ -1736,30 +1703,56 @@ template {
   vertical-align: middle;
 }
 .prices .text {
-  margin-bottom: 6.1875rem;
+  margin-top: 5.25rem;
+  margin-bottom: 3.3125rem;
   font-family: "Prata" !important;
-  font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.6875rem;
   color: #1B1B1B;
+}
+.prices .subheading {
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 2.5625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5F7489;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  text-align: center;
+  color: #fff;
+}
+.prices .free-ticket-list {
+  margin-bottom: 7.1875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 2px;
+}
+.prices .free-ticket-list .free-ticket {
+  width: 100%;
+  height: 4.0625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  text-align: center;
+  color: #1B1B1B;
+  background-color: #d9d9d9;
+  transition: background-color 0.13s ease;
+}
+.prices .free-ticket-list .free-ticket:hover {
+  background-color: rgba(95, 116, 137, 0.337254902);
 }
 
 .contacts .wrapper {
   flex-direction: column;
   align-items: start;
-}
-.contacts .breadcrumb {
-  margin-top: 2.4375rem;
-  margin-bottom: 3rem;
-}
-.contacts .title {
-  margin-bottom: 6.9375rem;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.6875rem;
-  color: #1B1B1B;
 }
 .contacts .title--litle {
   margin-bottom: 2.1875rem;
@@ -1885,6 +1878,10 @@ template {
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
+  transition: background-color 0.13s ease;
+}
+.contacts .content .buy-btn:hover {
+  background-color: #002E48;
 }
 .contacts .content .buy-btn:active {
   transition: 0.13s;

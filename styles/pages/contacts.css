@@ -2,18 +2,6 @@
   flex-direction: column;
   align-items: start;
 }
-.contacts .breadcrumb {
-  margin-top: 2.4375rem;
-  margin-bottom: 3rem;
-}
-.contacts .title {
-  margin-bottom: 6.9375rem;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.6875rem;
-  color: #1B1B1B;
-}
 .contacts .title--litle {
   margin-bottom: 2.1875rem;
 }
@@ -138,6 +126,10 @@
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
+  transition: background-color 0.13s ease;
+}
+.contacts .content .buy-btn:hover {
+  background-color: #002E48;
 }
 .contacts .content .buy-btn:active {
   transition: 0.13s;

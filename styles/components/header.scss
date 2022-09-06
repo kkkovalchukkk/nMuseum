@@ -37,7 +37,7 @@
 
                 &:hover {
                     transition: .13s;
-                    color: $blue !important;
+                    color: $dark-blue !important;
                 }
             }
 
@@ -48,11 +48,6 @@
                 font-size: .8rem;
                 line-height: 23px;
                 color: $dark;
-
-                &:hover {
-                    transition: .13s;
-                    color: $blue !important;
-                }
             }
         }
 

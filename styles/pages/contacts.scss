@@ -6,20 +6,6 @@
         align-items: start;
     }
 
-    .breadcrumb {
-        margin-top: 2.4375rem;
-        margin-bottom: 3rem;
-    }
-
-    .title {
-        margin-bottom: 6.9375rem;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 2rem;
-        line-height: 2.6875rem;
-        color: $dark;
-    }
-
     .title--litle {
         margin-bottom: 2.1875rem;
     }
@@ -160,6 +146,11 @@
             line-height: 16px;
 
             color: #FFFFFF;
+            transition: background-color .13s ease;
+
+            &:hover {
+                background-color: $dark-blue;
+            }
 
             &:active {
                 transition: .13s;

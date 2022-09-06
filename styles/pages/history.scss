@@ -4,18 +4,6 @@
         align-items: start;
     }
 
-    .breadcrumb {
-        margin-top: 2.4375rem;
-        margin-bottom: 3rem;
-    }
-
-    .title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 2rem;
-        line-height: 2.6875rem;
-        color: $dark;
-    }
 
     nav {
         width: 100%;
@@ -29,11 +17,11 @@
         display: flex;
         align-items: center;
         justify-content: start;
-        column-gap: 15px;
 
         .page-btn {
             height: 3.125rem;
-            max-width: 11.6875rem;
+            max-width: 215px;
+            padding: 0px 20px;
             font-style: normal;
             font-weight: 400;
             font-size: .875rem;
@@ -41,6 +29,12 @@
             color: $grey;
             text-align: left;
             cursor: pointer;
+
+            &:hover {
+                transition: .13s;
+                color: #fff !important;
+                background: #5f748880 !important;
+            }
         }
     }
 
