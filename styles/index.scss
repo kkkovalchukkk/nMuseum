@@ -57,6 +57,38 @@
 
 @import './components/swiper.scss';
 
+// Loadbtn
+
+.load-btn {
+    width: 100%;
+    max-width: 206px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1rem;
+    background: none;
+    color: $light-grey;
+    border: 1px solid $blue;
+    cursor: pointer;
+
+    &:active {
+        transition: .13s;
+        transform: translateY(4px);
+    }
+
+    &:hover {
+        transition: .13s;
+        color: $dark;
+        background-color: $blue;
+    }
+}
 
 // Card 
 
@@ -394,6 +426,8 @@
 
 @import './pages/contacts.scss';
 
+@import './pages/r-centre.scss';
+
 
 // Responsive 
 
@@ -402,35 +436,62 @@
         font-size: 15px;
     }
 
-
-
-
-    .header .top-header .main-nav-list .icon {
-        margin-right: 9px;
+    .header {
+        .top-header {
+            .main-nav-list {
+                .icon {
+                    margin-right: 9px;
+                }
+            }
+        }
     }
 
-    .about-mus .content {
-        justify-content: center;
-        gap: 5.625rem;
+    .about-mus {
+        .content {
+            justify-content: center;
+            gap: 5.625rem;
+
+            .text-content {
+                max-width: 58rem;
+            }
+        }
     }
 
-    .about-mus .content .text-content {
-        max-width: 58rem;
+
+    .reviews {
+        .review-card {
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .swiper {
+            max-height: 340px;
+        }
     }
 
-    .reviews .review-card {
-        width: 100%;
-        max-width: 450px;
-        margin: 0 auto;
+    .preview {
+        .swiper {
+            max-height: 340px;
+        }
     }
 
-    .footer .top-footer .top-content .nav-link-mo {
-        max-width: 190px;
+    .footer {
+        .top-footer {
+            .top-content {
+                .nav-link-mo {
+                    max-width: 240px;
+                    text-align: left;
+                }
+            }
+        }
     }
 
-    .swiper {
-        max-height: 340px;
-    }
+    // R-center 
+
+
+
+
 }
 
 @media (max-width:768px) {
@@ -504,6 +565,19 @@
         .card {
             margin: 0 auto;
         }
+    }
+
+    .breadcrumb {
+        margin-top: 36px;
+        margin-bottom: 25px;
+
+        .bc-link {
+            font-size: 12px !important;
+        }
+    }
+
+    .title {
+        font-size: 22px;
     }
 
     .see-more-btn {
@@ -595,6 +669,29 @@
             }
         }
     }
+
+    // Gallery
+
+    .gallery {
+        .photo-list {
+            row-gap: 40px;
+
+            .photo-item {
+                max-width: 267px;
+                row-gap: 2px;
+
+                .cat-name {
+                    font-size: 17px;
+                    line-height: 23px;
+                }
+            }
+        }
+
+        .load-btn {
+            margin-top: 43px;
+            margin-bottom: 65px;
+        }
+    }
 }
 
 @media (max-width:620px) {
@@ -602,6 +699,7 @@
         min-height: 410px;
 
         .heading {
+            font-size: 36px;
             margin-top: 44px;
             max-width: 440px;
         }
@@ -609,10 +707,12 @@
         background-position: center;
     }
 
-    .about-mus {
-        .text {
-            font-size: 15px !important;
-        }
+    .about-mus {}
+
+
+
+    .text {
+        font-size: 15px !important;
     }
 }
 
@@ -650,21 +750,57 @@
         }
     }
 
+    .footer {
+        .top-footer {
+            .top-content {
+                .social-link {
+                    width: 47px;
+                    height: 47px;
+                }
+
+                .title {
+                    white-space: nowrap;
+                    font-size: 17px !important;
+                    line-height: 20px !important;
+                }
+            }
+
+            .bottom-content {
+
+                .logo {
+                    width: 100%;
+                    max-width: 265px;
+                }
+            }
+        }
+    }
+
+    .breadcrumb {
+        margin-top: 36px;
+        margin-bottom: 25px;
+
+        .bc-link {
+            font-size: 11px !important;
+            line-height: 13px !important;
+        }
+    }
+
 
     .about-mus {
         margin-top: 68px;
         margin-bottom: 80px;
 
-        .title {
-            font-size: 20px;
-            line-height: 27px;
-            margin-bottom: 45.7;
-        }
+    }
 
-        .text {
-            font-size: 11px;
-            line-height: 20px;
-        }
+    .title {
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 45.7;
+    }
+
+    .text {
+        font-size: 11px !important;
+        line-height: 20px !important;
     }
 
     .preview {
@@ -673,7 +809,7 @@
         .title {
             font-size: 20px;
             line-height: 27px;
-            margin-bottom: 45.7;
+            margin-bottom: 45.7px;
         }
 
         .card {
@@ -701,5 +837,25 @@
 
     .reviews {
         margin-top: 0;
+        margin-bottom: 85px;
+    }
+
+    .swiper-pagination {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .swiper-navigation {
+        gap: 20px;
+    }
+
+    .swp-button svg {
+        width: 40px;
+    }
+
+    // R-center
+
+    .r-center .swiper-slide .image {
+        aspect-ratio: 1 / 1;
     }
 }

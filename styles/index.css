@@ -805,9 +805,37 @@ template {
 .swiper-scrollbar-drag {
   height: 12px;
   border-radius: 0 !important;
-  top: -4px;
+  top: -10px;
   position: absolute;
   background-color: #728BAD;
+}
+
+.load-btn {
+  width: 100%;
+  max-width: 206px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background: none;
+  color: #999;
+  border: 1px solid #5F7489;
+  cursor: pointer;
+}
+.load-btn:active {
+  transition: 0.13s;
+  transform: translateY(4px);
+}
+.load-btn:hover {
+  transition: 0.13s;
+  color: #1B1B1B;
+  background-color: #5F7489;
 }
 
 .card-list {
@@ -1545,33 +1573,8 @@ template {
   stroke: #999;
 }
 .gallery .load-btn {
-  width: 100%;
-  max-width: 206px;
-  height: 48px;
   margin-top: 139px;
   margin-bottom: 91px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  background: none;
-  color: #999;
-  border: 1px solid #5F7489;
-  cursor: pointer;
-}
-.gallery .load-btn:active {
-  transition: 0.13s;
-  transform: translateY(4px);
-}
-.gallery .load-btn:hover {
-  transition: 0.13s;
-  color: #1B1B1B;
-  background-color: #5F7489;
 }
 
 .expo .wrapper {
@@ -1988,6 +1991,41 @@ template {
   transform: translateY(4px);
 }
 
+.r-center .wrapper {
+  flex-direction: column;
+  align-items: start;
+}
+.r-center .date {
+  margin-bottom: 27px;
+}
+.r-center .text-content {
+  margin-bottom: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 1.5rem;
+}
+.r-center .text {
+  font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+}
+.r-center .first-swiper {
+  max-height: none;
+}
+.r-center .swiper-slide .image {
+  margin: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.r-center .swiper-navigation {
+  margin-top: 80px;
+  margin-bottom: 105px;
+}
+
 @media (max-width: 1024px) {
   html {
     font-size: 15px;
@@ -2007,11 +2045,15 @@ template {
     max-width: 450px;
     margin: 0 auto;
   }
-  .footer .top-footer .top-content .nav-link-mo {
-    max-width: 190px;
-  }
-  .swiper {
+  .reviews .swiper {
     max-height: 340px;
+  }
+  .preview .swiper {
+    max-height: 340px;
+  }
+  .footer .top-footer .top-content .nav-link-mo {
+    max-width: 240px;
+    text-align: left;
   }
 }
 @media (max-width: 768px) {
@@ -2067,6 +2109,16 @@ template {
   }
   .second-swiper .card {
     margin: 0 auto;
+  }
+  .breadcrumb {
+    margin-top: 36px;
+    margin-bottom: 25px;
+  }
+  .breadcrumb .bc-link {
+    font-size: 12px !important;
+  }
+  .title {
+    font-size: 22px;
   }
   .see-more-btn {
     display: block !important;
@@ -2139,6 +2191,21 @@ template {
   .footer .bottom-footer .copyrights {
     margin-bottom: 16px;
   }
+  .gallery .photo-list {
+    row-gap: 40px;
+  }
+  .gallery .photo-list .photo-item {
+    max-width: 267px;
+    row-gap: 2px;
+  }
+  .gallery .photo-list .photo-item .cat-name {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .gallery .load-btn {
+    margin-top: 43px;
+    margin-bottom: 65px;
+  }
 }
 @media (max-width: 620px) {
   .banner {
@@ -2146,10 +2213,11 @@ template {
     background-position: center;
   }
   .banner .heading {
+    font-size: 36px;
     margin-top: 44px;
     max-width: 440px;
   }
-  .about-mus .text {
+  .text {
     font-size: 15px !important;
   }
 }
@@ -2175,18 +2243,39 @@ template {
     font-size: 30px;
     line-height: 41px;
   }
+  .footer .top-footer .top-content .social-link {
+    width: 47px;
+    height: 47px;
+  }
+  .footer .top-footer .top-content .title {
+    white-space: nowrap;
+    font-size: 17px !important;
+    line-height: 20px !important;
+  }
+  .footer .top-footer .bottom-content .logo {
+    width: 100%;
+    max-width: 265px;
+  }
+  .breadcrumb {
+    margin-top: 36px;
+    margin-bottom: 25px;
+  }
+  .breadcrumb .bc-link {
+    font-size: 11px !important;
+    line-height: 13px !important;
+  }
   .about-mus {
     margin-top: 68px;
     margin-bottom: 80px;
   }
-  .about-mus .title {
+  .title {
     font-size: 20px;
     line-height: 27px;
     margin-bottom: 45.7;
   }
-  .about-mus .text {
-    font-size: 11px;
-    line-height: 20px;
+  .text {
+    font-size: 11px !important;
+    line-height: 20px !important;
   }
   .preview {
     margin-bottom: 98px;
@@ -2194,7 +2283,7 @@ template {
   .preview .title {
     font-size: 20px;
     line-height: 27px;
-    margin-bottom: 45.7;
+    margin-bottom: 45.7px;
   }
   .preview .card .subtitle {
     font-style: normal;
@@ -2215,5 +2304,19 @@ template {
   }
   .reviews {
     margin-top: 0;
+    margin-bottom: 85px;
+  }
+  .swiper-pagination {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .swiper-navigation {
+    gap: 20px;
+  }
+  .swp-button svg {
+    width: 40px;
+  }
+  .r-center .swiper-slide .image {
+    aspect-ratio: 1/1;
   }
 }/*# sourceMappingURL=index.css.map */

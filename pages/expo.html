@@ -41,14 +41,26 @@
     <header class="header">
         <div class="top-header">
             <div class="wrapper">
-                <a href="../index.html" class="logo-link" role="banner">
-                    <img src="../assets/img/logo.svg" alt="МОЛОДЁЖНЫЙ ЦЕНТР-МУЗЕЙ ИМЕНИ АДМИРАЛА НАХИМОВА" class="logo">
+                <a href="#" class="logo-link" role="banner">
+                    <img src="/assets/img/logo.svg" alt="МОЛОДЁЖНЫЙ ЦЕНТР-МУЗЕЙ ИМЕНИ АДМИРАЛА НАХИМОВА" class="logo">
                 </a>
+                <button class="burger menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="40" height="35" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
                 <nav class="nav" role="navigation">
                     <ul class="main-nav-list">
                         <li class="nav-item">
                             <a href="#" class="nav-link" role="link">
-                                <span class="icon ticket-icon"></span>
+                                <span class="icon ticket-icon">
+                                </span>
                                 Купить билеты
                             </a>
                         </li>
@@ -67,31 +79,46 @@
         </div>
         <div class="bottom-header">
             <div class="wrapper">
+                <ul class="second-nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" role="link">
+                            <span class="icon ticket-icon">
+                            </span>
+                            Купить билеты
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-join" role="link">
+                            <span class="icon join-icon"></span>
+                            Оставить отзыв
+                        </a>
+                    </li>
+                </ul>
                 <nav class="nav" role="navigation">
                     <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="../index.html" class="nav-link" role="link">Главная</a>
+                        <li class="nav-item ">
+                            <a href="/index.html" class="nav-link" role="link">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./news.html" class="nav-link" role="link">Новости</a>
+                            <a href="/pages/news.html" class="nav-link" role="link">Новости</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./photo.html" class="nav-link" role="link">Фотогалерея</a>
+                            <a href="/pages/photo.html" class="nav-link" role="link">Фотогалерея</a>
                         </li>
                         <li class="nav-item active">
-                            <a href="./expo.html" class="nav-link" role="link">Экспозиция</a>
+                            <a href="/pages/expo.html" class="nav-link" role="link">Экспозиция</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./history.html" class="nav-link" role="link">Исторический блок</a>
+                            <a href="/pages/history.html" class="nav-link" role="link">Исторический блок</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./prices.html" class="nav-link" role="link">Экскурсии и цены</a>
+                            <a href="/pages/prices.html" class="nav-link" role="link">Экскурсии и цены</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./contacts.html" class="nav-link" role="link">Контакты</a>
+                            <a href="/pages/contacts.html" class="nav-link" role="link">Контакты</a>
                         </li>
-                        <li class="nav-item nav-item-mo">
-                            <a href="./r-center.html" class="nav-link ">Ресурсный центр по поддержке
+                        <li class="nav-item nav-item-mo ">
+                            <a href="/pages/r-center.html" class="nav-link ">Ресурсный центр по поддержке
                                 добровольчества</a>
                         </li>
                     </ul>
@@ -151,65 +178,76 @@
             </div>
         </section>
     </main>
-    <footer class="footer footer-bottom">
+    <footer class="footer">
         <div class="top-footer">
             <div class="wrapper">
                 <div class="top-content">
-                    <div class="col">
-                        <h4 class="title">О музее</h4>
-                        <nav class="nav">
-                            <ul class="nav-list">
-                                <li class="nav-item">
-                                    <a href="../index.html" class="nav-link" role="link">
-                                        Главная
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./photo.html" class="nav-link" role="link">
-                                        Фотогаллерея
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./history.html" class="nav-link" role="link">
-                                        Исторический блок
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./contacts.html" class="nav-link" role="link">
-                                        Контакты
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col">
-                        <h4 class="title">Посетителям</h4>
-                        <nav class="nav">
-                            <ul class="nav-list">
-                                <li class="nav-item">
-                                    <a href="./news.html" class="nav-link" role="link">
-                                        Новости
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./expo.html" class="nav-link" role="link">
-                                        Экспозиция
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="./prices.html" class="nav-link" role="link">
-                                        Экскурсии и цены
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col">
-                        <nav class="nav">
-                            <a href="./r-center.html" class="nav-link nav-link-mo" role="link">Ресурсный центр по
-                                поддержке
-                                добровольчества</a>
-                        </nav>
+                    <div class="left-side">
+                        <div class="col">
+                            <h4 class="title">О музее</h4>
+                            <nav class="nav">
+                                <ul class="nav-list">
+                                    <li class="nav-item">
+                                        <a href="/index.html" class="nav-link" role="link">
+                                            Главная
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/photo.html" class="nav-link" role="link">
+                                            Фотогаллерея
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/history.html" class="nav-link" role="link">
+                                            Исторический блок
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/contacts.html" class="nav-link" role="link">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col">
+                            <h4 class="title">Посетителям</h4>
+                            <nav class="nav">
+                                <ul class="nav-list">
+                                    <li class="nav-item">
+                                        <a href="/pages/news.html" class="nav-link" role="link">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/expo.html" class="nav-link" role="link">
+                                            Экспозиция
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/pages/prices.html" class="nav-link" role="link">
+                                            Экскурсии и цены
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col">
+                            <nav class="nav">
+                                <a href="/pages/r-center.html" class="nav-link nav-link-mo" role="link">Ресурсный центр
+                                    по
+                                    поддержке
+                                    добровольчества</a>
+                            </nav>
+                        </div>
+                        <address>
+                            <p class="street">214000, г.Смоленск, ул.Большая Советская, д.29/1</p>
+                            <a href="tel:74812380917" class="tel">+7 (4812) 38-09-17</a>
+                            <a class="mail" href="mailto:navy-museum@mail.ru">
+                                navy-museum@mail.ru
+                            </a>
+                        </address>
+                        <a href="#" class="mail-rating"></a>
                     </div>
                     <div class="col">
                         <h4 class="title">Мы в соц. сетях:</h4>
@@ -246,8 +284,8 @@
                     </div>
                 </div>
                 <div class="bottom-content">
-                    <a href="../index.html" class="logo-link">
-                        <img src="../assets/img/white-logo.svg" alt="МОЛОДЁЖНЫЙ ЦЕНТР-МУЗЕЙ ИМЕНИ АДМИРАЛА НАХИМОВА"
+                    <a href="/index.html" class="logo-link">
+                        <img src="/assets/img/white-logo.svg" alt="МОЛОДЁЖНЫЙ ЦЕНТР-МУЗЕЙ ИМЕНИ АДМИРАЛА НАХИМОВА"
                             class="logo">
                     </a>
                 </div>

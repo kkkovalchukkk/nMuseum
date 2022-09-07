@@ -21,8 +21,9 @@ breakpoints: {
     768: {
         slidesPerView: 2,
     },
-    320: {
+    310: {
         slidesPerView: 1,
+        centeredSlidesBounds:true,
     }
 }
     

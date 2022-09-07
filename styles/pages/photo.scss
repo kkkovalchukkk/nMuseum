@@ -100,34 +100,8 @@
     }
 
     .load-btn {
-        width: 100%;
-        max-width: 206px;
-        height: 48px;
         margin-top: 139px;
         margin-bottom: 91px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-self: center;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: .875rem;
-        line-height: 1rem;
-        background: none;
-        color: $light-grey;
-        border: 1px solid $blue;
-        cursor: pointer;
-
-        &:active {
-            transition: .13s;
-            transform: translateY(4px);
-        }
-
-        &:hover {
-            transition: .13s;
-            color: $dark;
-            background-color: $blue;
-        }
     }
+
 }

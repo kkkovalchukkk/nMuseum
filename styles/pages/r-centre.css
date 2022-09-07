@@ -1,0 +1,34 @@
+.r-center .wrapper {
+  flex-direction: column;
+  align-items: start;
+}
+.r-center .date {
+  margin-bottom: 27px;
+}
+.r-center .text-content {
+  margin-bottom: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 1.5rem;
+}
+.r-center .text {
+  font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+}
+.r-center .first-swiper {
+  max-height: none;
+}
+.r-center .swiper-slide .image {
+  margin: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.r-center .swiper-navigation {
+  margin-top: 80px;
+  margin-bottom: 105px;
+}/*# sourceMappingURL=r-centre.css.map */
