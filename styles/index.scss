@@ -179,6 +179,7 @@
     }
 
     .content {
+        position: relative;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -202,9 +203,10 @@
             sans-serif !important;
         font-style: normal;
         font-weight: 400;
-        font-size: .75rem;
+        font-size: .9375rem;
         line-height: 1.1875rem;
         color: #333333;
+        transition: height .13s ease;
     }
 
     .about-img {
@@ -213,6 +215,10 @@
         max-width: 400px;
         flex-shrink: 0;
         align-self: start;
+    }
+
+    .see-more-btn {
+        display: none;
     }
 }
 
@@ -392,11 +398,11 @@
 // Responsive 
 
 @media (max-width:1024px) {
-
-    .header .top-header .main-nav-list {
-        margin-right: 2rem;
-        gap: 1.5rem;
+    html {
+        font-size: 15px;
     }
+
+
 
 
     .header .top-header .main-nav-list .icon {
@@ -428,9 +434,6 @@
 }
 
 @media (max-width:768px) {
-    html {
-        font-size: 15px;
-    }
 
     .header {
         .logo {
@@ -440,6 +443,7 @@
         }
 
         .top-header {
+            height: 78px;
 
             .main-nav-list,
             .toggle-find-btn {
@@ -488,6 +492,51 @@
                 }
             }
         }
+    }
+
+    .preview .card-list {
+        display: none !important;
+    }
+
+    .second-swiper {
+        display: block;
+
+        .card {
+            margin: 0 auto;
+        }
+    }
+
+    .see-more-btn {
+        display: block !important;
+
+        background: none;
+        border: none;
+        font-family: 'Prata' !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 15px;
+        color: $dark;
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: rgba($color: #000, $alpha: 0);
+        transition: text-decoration-color .13s ease;
+
+        &:hover {
+            text-decoration-color: #000000;
+        }
+
+        span {
+            color: #9F0000;
+        }
+    }
+
+    .hide-content {
+        display: none;
+    }
+
+    .hide {
+        display: none !important;
     }
 
     .footer {
@@ -548,8 +597,109 @@
     }
 }
 
-@media (max-width:740px) {
-    .preview .card-list {
-        display: none !important;
+@media (max-width:620px) {
+    .banner {
+        min-height: 410px;
+
+        .heading {
+            margin-top: 44px;
+            max-width: 440px;
+        }
+
+        background-position: center;
+    }
+
+    .about-mus {
+        .text {
+            font-size: 15px !important;
+        }
+    }
+}
+
+@media (max-width:425px) {
+
+    .header {
+        .logo {
+            max-width: 152px;
+        }
+
+        .bottom-header {
+            height: 59px;
+
+            .nav-link {
+                font-size: 11px;
+            }
+
+        }
+
+        .burger {
+            svg {
+                width: 35px !important;
+                height: 30px !important;
+            }
+        }
+    }
+
+    .banner {
+        min-height: 310px;
+
+        .heading {
+            max-width: 270px;
+            font-size: 30px;
+            line-height: 41px;
+        }
+    }
+
+
+    .about-mus {
+        margin-top: 68px;
+        margin-bottom: 80px;
+
+        .title {
+            font-size: 20px;
+            line-height: 27px;
+            margin-bottom: 45.7;
+        }
+
+        .text {
+            font-size: 11px;
+            line-height: 20px;
+        }
+    }
+
+    .preview {
+        margin-bottom: 98px;
+
+        .title {
+            font-size: 20px;
+            line-height: 27px;
+            margin-bottom: 45.7;
+        }
+
+        .card {
+            .subtitle {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 23px;
+            }
+
+            .descr {
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 13px;
+            }
+
+            .outline-btn {
+                height: 33px;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+            }
+        }
+    }
+
+    .reviews {
+        margin-top: 0;
     }
 }

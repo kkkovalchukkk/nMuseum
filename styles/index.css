@@ -569,7 +569,7 @@ template {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   line-height: 19px;
 }
 .header .bottom-header .nav-list .nav-link:hover {
@@ -732,10 +732,23 @@ template {
   color: #1B1B1B;
 }
 
-.swiper {
+.image-swiper {
   width: 100%;
   height: 100%;
   max-height: 305px;
+}
+
+.first-swiper {
+  width: 100%;
+  height: 100%;
+  max-height: 305px;
+}
+
+.second-swiper {
+  display: none;
+  width: 100%;
+  height: 100%;
+  max-height: 1000px !important;
 }
 
 .swp-button {
@@ -781,6 +794,22 @@ template {
   color: #000;
 }
 
+.scrollbar {
+  width: 100%;
+  height: 2px;
+  margin-top: 53px;
+  background-color: #a3b8d7;
+  position: relative;
+}
+
+.swiper-scrollbar-drag {
+  height: 12px;
+  border-radius: 0 !important;
+  top: -4px;
+  position: absolute;
+  background-color: #728BAD;
+}
+
 .card-list {
   width: 100%;
   display: flex;
@@ -788,7 +817,8 @@ template {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
-.card-list .card {
+
+.card {
   width: 100%;
   max-width: 330px;
   flex-grow: 0;
@@ -797,13 +827,13 @@ template {
   flex-direction: column;
   align-items: start;
 }
-.card-list .card .card-img {
+.card .card-img {
   width: 100%;
   max-width: 397px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.card-list .card .subtitle {
+.card .subtitle {
   max-width: 380px;
   margin-top: 30px;
   margin-bottom: 25px;
@@ -814,7 +844,7 @@ template {
   line-height: 2.0625rem;
   color: #1B1B1B;
 }
-.card-list .card .descr {
+.card .descr {
   max-width: 100%;
   margin-top: 22px;
   margin-bottom: 20px;
@@ -825,7 +855,7 @@ template {
   line-height: 1.1875rem;
   color: #000000;
 }
-.card-list .card .outline-btn {
+.card .outline-btn {
   width: 100%;
   height: 50px;
   display: flex;
@@ -840,10 +870,10 @@ template {
   border: 1px solid #5F7489;
   transition: 0.1s ease background-color;
 }
-.card-list .card .outline-btn:hover {
+.card .outline-btn:hover {
   background-color: #5F7489;
 }
-.card-list .card .outline-btn:active {
+.card .outline-btn:active {
   transition: 0.15s;
   transform: translateY(4px);
 }
@@ -1080,6 +1110,7 @@ template {
   align-items: start;
 }
 .about-mus .content {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1096,9 +1127,10 @@ template {
   font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 0.9375rem;
   line-height: 1.1875rem;
   color: #333333;
+  transition: height 0.13s ease;
 }
 .about-mus .about-img {
   -o-object-fit: contain;
@@ -1107,6 +1139,9 @@ template {
   max-width: 400px;
   flex-shrink: 0;
   align-self: start;
+}
+.about-mus .see-more-btn {
+  display: none;
 }
 
 .preview {
@@ -1954,9 +1989,8 @@ template {
 }
 
 @media (max-width: 1024px) {
-  .header .top-header .main-nav-list {
-    margin-right: 2rem;
-    gap: 1.5rem;
+  html {
+    font-size: 15px;
   }
   .header .top-header .main-nav-list .icon {
     margin-right: 9px;
@@ -1981,12 +2015,12 @@ template {
   }
 }
 @media (max-width: 768px) {
-  html {
-    font-size: 15px;
-  }
   .header .logo {
     width: 100%;
     max-width: 210px;
+  }
+  .header .top-header {
+    height: 78px;
   }
   .header .top-header .main-nav-list,
 .header .top-header .toggle-find-btn {
@@ -2024,6 +2058,46 @@ template {
   }
   .header .bottom-header .second-nav-list .nav-link-join {
     color: #1B1B1B;
+  }
+  .preview .card-list {
+    display: none !important;
+  }
+  .second-swiper {
+    display: block;
+  }
+  .second-swiper .card {
+    margin: 0 auto;
+  }
+  .see-more-btn {
+    display: block !important;
+    background: none;
+    border: none;
+    font-family: "Prata" !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 15px;
+    color: #1B1B1B;
+    cursor: pointer;
+    text-decoration: underline;
+    -webkit-text-decoration-color: rgba(0, 0, 0, 0);
+            text-decoration-color: rgba(0, 0, 0, 0);
+    transition: -webkit-text-decoration-color 0.13s ease;
+    transition: text-decoration-color 0.13s ease;
+    transition: text-decoration-color 0.13s ease, -webkit-text-decoration-color 0.13s ease;
+  }
+  .see-more-btn:hover {
+    -webkit-text-decoration-color: #000000;
+            text-decoration-color: #000000;
+  }
+  .see-more-btn span {
+    color: #9F0000;
+  }
+  .hide-content {
+    display: none;
+  }
+  .hide {
+    display: none !important;
   }
   .footer .top-footer .top-content {
     justify-content: space-evenly;
@@ -2066,8 +2140,80 @@ template {
     margin-bottom: 16px;
   }
 }
-@media (max-width: 740px) {
-  .preview .card-list {
-    display: none !important;
+@media (max-width: 620px) {
+  .banner {
+    min-height: 410px;
+    background-position: center;
+  }
+  .banner .heading {
+    margin-top: 44px;
+    max-width: 440px;
+  }
+  .about-mus .text {
+    font-size: 15px !important;
+  }
+}
+@media (max-width: 425px) {
+  .header .logo {
+    max-width: 152px;
+  }
+  .header .bottom-header {
+    height: 59px;
+  }
+  .header .bottom-header .nav-link {
+    font-size: 11px;
+  }
+  .header .burger svg {
+    width: 35px !important;
+    height: 30px !important;
+  }
+  .banner {
+    min-height: 310px;
+  }
+  .banner .heading {
+    max-width: 270px;
+    font-size: 30px;
+    line-height: 41px;
+  }
+  .about-mus {
+    margin-top: 68px;
+    margin-bottom: 80px;
+  }
+  .about-mus .title {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 45.7;
+  }
+  .about-mus .text {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .preview {
+    margin-bottom: 98px;
+  }
+  .preview .title {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 45.7;
+  }
+  .preview .card .subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .preview .card .descr {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .preview .card .outline-btn {
+    height: 33px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+  .reviews {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=index.css.map */
