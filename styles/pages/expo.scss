@@ -28,23 +28,20 @@
         }
     }
 
-    .images {
+    .swiper {
+        max-height: none;
 
-        width: 100%;
-        margin-bottom: 4.9375rem;
-        display: flex;
-        // justify-content: center;
-        column-gap: 24px;
-
-        .image {
+        img {
+            width: 100%;
             max-width: 608px;
-
-            img {
-                width: 100%;
-                max-width: 608px;
-            }
         }
     }
+
+    .swiper-navigation {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
 
     .text {
         margin-bottom: 7.5rem;
@@ -54,6 +51,7 @@
         line-height: 1.1875rem;
         color: $grey;
     }
+
 
     .now {
         color: $blue !important;

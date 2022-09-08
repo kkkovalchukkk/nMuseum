@@ -1603,19 +1603,16 @@ template {
 .expo .menu-list button:hover {
   color: #5F7489 !important;
 }
-.expo .images {
-  width: 100%;
-  margin-bottom: 4.9375rem;
-  display: flex;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
+.expo .swiper {
+  max-height: none;
 }
-.expo .images .image {
-  max-width: 608px;
-}
-.expo .images .image img {
+.expo .swiper img {
   width: 100%;
   max-width: 608px;
+}
+.expo .swiper-navigation {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .expo .text {
   margin-bottom: 7.5rem;
@@ -1671,6 +1668,19 @@ template {
   font-size: 1rem;
   line-height: 1.1875rem;
   color: #1B1B1B;
+}
+.history p.hide-content {
+  font-size: 15px;
+  line-height: 1.1875rem;
+}
+.history .text {
+  margin: 0;
+}
+.history .see-more-btn {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 85px;
+  cursor: pointer;
 }
 .history button {
   border: none;
@@ -2055,6 +2065,10 @@ template {
     max-width: 240px;
     text-align: left;
   }
+  .expo .menu-list {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 768px) {
   .header .logo {
@@ -2103,6 +2117,16 @@ template {
   }
   .preview .card-list {
     display: none !important;
+  }
+  .swiper-pagination {
+    font-size: 24px;
+    line-height: 22px;
+  }
+  .swiper-navigation {
+    gap: 20px;
+  }
+  .swp-button svg {
+    width: 60px;
   }
   .second-swiper {
     display: block;
@@ -2206,6 +2230,50 @@ template {
     margin-top: 43px;
     margin-bottom: 65px;
   }
+  .history nav {
+    height: auto;
+    background: none;
+  }
+  .history nav .wrapper {
+    max-width: none;
+    padding: 0;
+  }
+  .history .page-list {
+    flex-direction: column;
+    margin-bottom: 47px;
+    row-gap: 6px;
+  }
+  .history .page-list .page-item {
+    width: 100%;
+    background: #ededed;
+    text-align: center;
+  }
+  .history .page-list .page-item .page-btn {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  .news-detail .swiper {
+    max-height: none;
+  }
+  .news-detail .swiper-slide .image {
+    width: 100%;
+    max-width: none;
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .expo .menu-list {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  .expo .menu-list .menu-btn {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .expo .swiper img {
+    max-width: none;
+  }
 }
 @media (max-width: 620px) {
   .banner {
@@ -2242,6 +2310,16 @@ template {
     max-width: 270px;
     font-size: 30px;
     line-height: 41px;
+  }
+  .swiper-pagination {
+    font-size: 22px !important;
+    line-height: 22px !important;
+  }
+  .swiper-navigation {
+    gap: 20px !important;
+  }
+  .swp-button svg {
+    width: 40px !important;
   }
   .footer .top-footer .top-content .social-link {
     width: 47px;
@@ -2306,17 +2384,20 @@ template {
     margin-top: 0;
     margin-bottom: 85px;
   }
-  .swiper-pagination {
-    font-size: 22px;
-    line-height: 22px;
-  }
-  .swiper-navigation {
-    gap: 20px;
-  }
-  .swp-button svg {
-    width: 40px;
-  }
   .r-center .swiper-slide .image {
     aspect-ratio: 1/1;
+  }
+  .history p.hide-content {
+    font-size: 11px !important;
+    line-height: 20px !important;
+  }
+  .swiper .img {
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .swiper-navigation {
+    margin-top: 40px !important;
+    margin-bottom: 30px !important;
   }
 }/*# sourceMappingURL=index.css.map */

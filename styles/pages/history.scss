@@ -49,6 +49,23 @@
         color: $dark;
     }
 
+    p.hide-content {
+        font-size: 15px;
+        line-height: 1.1875rem;
+    }
+
+    .text {
+        margin: 0;
+    }
+
+    .see-more-btn {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 85px;
+        cursor: pointer;
+    }
+
+
     button {
         border: none;
         background: none;

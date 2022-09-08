@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../styles/index.css">
     <title>Молодёжный центр-музей имени адмирала Нахимова</title>
 </head>
@@ -162,14 +163,35 @@
                         </li>
                     </ul>
                 </nav>
-                <ul class="images">
-                    <li class="image">
-                        <img src="../assets/img/room-img1.jpg" alt="Изображение зала" class="img">
-                    </li>
-                    <li class="image">
-                        <img src="../assets/img/room-img2.jpg" alt="Изображение зала" class="img">
-                    </li>
-                </ul>
+                <div class="swiper first-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../assets/img/room-img1.jpg" alt="Изображение зала" class="img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../assets/img/room-img2.jpg" alt="Изображение зала" class="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-navigation">
+                    <div class="swp-button swiper-button-prev">
+                        <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.939339 13.0607C0.353554 12.4749 0.353554 11.5251 0.939339 10.9393L10.4853 1.3934C11.0711 0.807617 12.0208 0.807617 12.6066 1.3934C13.1924 1.97919 13.1924 2.92894 12.6066 3.51472L4.12132 12L12.6066 20.4853C13.1924 21.0711 13.1924 22.0208 12.6066 22.6066C12.0208 23.1924 11.0711 23.1924 10.4853 22.6066L0.939339 13.0607ZM80 13.5L2 13.5L2 10.5L80 10.5L80 13.5Z"
+                                fill="#333333" />
+                        </svg>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swp-button swiper-button-next">
+                        <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M79.0607 13.0607C79.6464 12.4749 79.6464 11.5251 79.0607 10.9393L69.5147 1.3934C68.9289 0.807617 67.9792 0.807617 67.3934 1.3934C66.8076 1.97919 66.8076 2.92894 67.3934 3.51472L75.8787 12L67.3934 20.4853C66.8076 21.0711 66.8076 22.0208 67.3934 22.6066C67.9792 23.1924 68.9289 23.1924 69.5147 22.6066L79.0607 13.0607ZM-1.31134e-07 13.5L78 13.5L78 10.5L1.31134e-07 10.5L-1.31134e-07 13.5Z"
+                                fill="#333333" />
+                        </svg>
+
+                    </div>
+                </div>
                 <p class="text">1-й зал - Мемориальный – увековечивает память смолян-моряков, погибших в годы ВОВ
                     1941-1945 гг. Их имена написаны на 19 скрижалях, расположенных на стилизованном борту корабля.
                     Установлен монумент «Скорбящая мать», памятник погибшим морякам-смолянам и часовня с горящей свечой
@@ -311,8 +333,8 @@
             </div>
         </div>
     </footer>
-    <script type="module" src="../scripts/openFindMenu.js"></script>
-    <script src="../index.js"></script>
+    <script type="module" src="/scripts/swiper.js"></script>
+    <script src="/scripts/openFindMenu.js"></script>
 </body>
 
 </html>

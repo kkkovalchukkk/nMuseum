@@ -9,7 +9,6 @@ const swiper = new Swiper('.first-swiper', {
     el: '.swiper-pagination',
     type:'fraction',
   },
-
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -23,7 +22,6 @@ breakpoints: {
     },
     310: {
         slidesPerView: 1,
-        centeredSlidesBounds:true,
     }
 }
     
