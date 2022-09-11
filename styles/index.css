@@ -913,7 +913,7 @@ template {
   top: 0;
   left: 0;
   background: rgba(0, 46, 72, 0.9);
-  z-index: 11;
+  z-index: 9999;
   transition: transform 0.3s ease;
 }
 .find-container .toggle-find-btn {
@@ -1051,7 +1051,7 @@ template {
   cursor: pointer;
   display: none;
   padding: 0;
-  z-index: 99999999999;
+  z-index: 999;
 }
 
 .line {
@@ -1104,7 +1104,7 @@ template {
   justify-content: center;
   position: fixed;
   background-color: #fff;
-  z-index: 9999;
+  z-index: 999;
 }
 .burger-menu .burger-nav-list {
   max-width: 300px;
