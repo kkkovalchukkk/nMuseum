@@ -919,7 +919,7 @@ template {
 .find-container .toggle-find-btn {
   position: absolute;
   top: 56px;
-  right: 0;
+  right: 20px;
   border: none;
   background: none;
 }
@@ -937,7 +937,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #FFFFFF;
+  border-bottom: 2px solid #ffffff;
   padding-bottom: 32px;
 }
 .find-container #finder-input {
@@ -949,7 +949,7 @@ template {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2.0625rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .find-container #finder-input:focus {
   outline: none;
@@ -988,14 +988,14 @@ template {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   -webkit-text-decoration-color: rgba(0, 0, 0, 0);
           text-decoration-color: rgba(0, 0, 0, 0);
 }
 .find-container .rezults-list .rezult-link:hover {
   text-decoration: underline;
-  -webkit-text-decoration-color: #FFFFFF;
-          text-decoration-color: #FFFFFF;
+  -webkit-text-decoration-color: #ffffff;
+          text-decoration-color: #ffffff;
   transition: 0.15s;
 }
 
@@ -1051,6 +1051,7 @@ template {
   cursor: pointer;
   display: none;
   padding: 0;
+  z-index: 99999999999;
 }
 
 .line {
@@ -1093,6 +1094,50 @@ template {
   stroke-width: 6;
 }
 
+.burger-menu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: #fff;
+  z-index: 9999;
+}
+.burger-menu .burger-nav-list {
+  max-width: 300px;
+  margin-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 36px;
+  text-align: center;
+}
+.burger-menu .burger-nav-list .burger-nav-item {
+  height: 100%;
+  padding: 14px;
+  position: relative;
+}
+.burger-menu .burger-nav-list .burger-nav-item .burger-nav-link {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #1B1B1B;
+  text-align: center;
+}
+.burger-menu .search-icon {
+  width: 50px;
+  height: 48px;
+}
+
+.overflow {
+  overflow-y: hidden;
+}
+
 .banner {
   position: relative;
   width: 100%;
@@ -1125,7 +1170,7 @@ template {
   font-weight: 400;
   font-size: 3.375rem;
   line-height: 4.5625rem;
-  color: #FFFFFF;
+  color: #ffffff;
   z-index: 3;
 }
 
@@ -2071,6 +2116,10 @@ template {
   }
 }
 @media (max-width: 768px) {
+  .find-container .search-icon {
+    width: 30px;
+    height: 28px;
+  }
   .header .logo {
     width: 100%;
     max-width: 210px;
@@ -2167,7 +2216,7 @@ template {
             text-decoration-color: #000000;
   }
   .see-more-btn span {
-    color: #9F0000;
+    color: #9f0000;
   }
   .hide-content {
     display: none;
@@ -2290,6 +2339,28 @@ template {
   }
 }
 @media (max-width: 425px) {
+  .find-container input {
+    font-weight: 400;
+    font-size: 12px !important;
+    line-height: 15px !important;
+  }
+  .burger-menu .burger-nav-list {
+    row-gap: 20px;
+  }
+  .burger-menu .burger-nav-list .burger-nav-item {
+    max-width: 200px;
+  }
+  .burger-menu .burger-nav-list .burger-nav-item .burger-nav-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px !important;
+    line-height: 13px !important;
+    text-align: center;
+  }
+  .burger-menu .search-icon {
+    width: 30px;
+    height: 28px;
+  }
   .header .logo {
     max-width: 152px;
   }

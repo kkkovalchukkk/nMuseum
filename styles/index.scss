@@ -1,14 +1,14 @@
 // Vars
 
-@import './vars';
+@import "./vars";
 
-// Fonts 
+// Fonts
 
-@import './fonts.scss';
+@import "./fonts.scss";
 
-// Reset 
+// Reset
 
-@import './reset.scss';
+@import "./reset.scss";
 
 * {
     box-sizing: border-box !important;
@@ -16,36 +16,30 @@
 
 // Normalize
 
-@import './normalize.scss';
+@import "./normalize.scss";
 
-// Header 
+// Header
 
-@import './components/header.scss';
+@import "./components/header.scss";
 
 .second-nav-list {
     display: none;
 }
 
-// Icons 
+// Icons
 
-@import './components/icons.scss';
+@import "./components/icons.scss";
 
-// Wrapper 
+// Wrapper
 
-@import './components/wrapper.scss';
+@import "./components/wrapper.scss";
 
 // Main
 
-
 .title {
     margin-bottom: 2.25rem;
-    font-family: 'Prata',
-        'Roboto',
-        'Gill Sans',
-        'Gill Sans MT',
-        Calibri,
-        'Trebuchet MS',
-        sans-serif !important;
+    font-family: "Prata", "Roboto", "Gill Sans", "Gill Sans MT", Calibri,
+        "Trebuchet MS", sans-serif !important;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -53,9 +47,9 @@
     color: $dark;
 }
 
-// Swiper 
+// Swiper
 
-@import './components/swiper.scss';
+@import "./components/swiper.scss";
 
 // Loadbtn
 
@@ -68,10 +62,10 @@
     align-items: center;
     justify-content: center;
     align-self: center;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 1rem;
     background: none;
     color: $light-grey;
@@ -79,28 +73,28 @@
     cursor: pointer;
 
     &:active {
-        transition: .13s;
+        transition: 0.13s;
         transform: translateY(4px);
     }
 
     &:hover {
-        transition: .13s;
+        transition: 0.13s;
         color: $dark;
         background-color: $blue;
     }
 }
 
-// Card 
+// Card
 
-@import './components/card.scss';
+@import "./components/card.scss";
 
-// Finder 
+// Finder
 
-@import './components/findbox.scss';
+@import "./components/findbox.scss";
 
 // Breadcrumb
 
-@import './components/breadcrumb.scss';
+@import "./components/breadcrumb.scss";
 
 // Burger
 
@@ -110,6 +104,7 @@
     cursor: pointer;
     display: none;
     padding: 0;
+    z-index: 99999999999;
 }
 
 .line {
@@ -153,8 +148,51 @@
     stroke-width: 6;
 }
 
+.burger-menu {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999;
+    .burger-nav-list {
+        max-width: 300px;
+        margin-bottom: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 36px;
+        text-align: center;
+        .burger-nav-item {
+            height: 100%;
+            padding: 14px;
+            position: relative;
+            .burger-nav-link {
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 120%;
+                color: $dark;
+                text-align: center;
+            }
+        }
+    }
+    .search-icon {
+        width: 50px;
+        height: 48px;
+    }
+}
 
-// Banner 
+.overflow {
+    overflow-y: hidden;
+}
+
+// Banner
 
 .banner {
     position: relative;
@@ -168,7 +206,7 @@
     z-index: 1;
 
     &::after {
-        content: '';
+        content: "";
         width: 100%;
         height: 100%;
         position: absolute;
@@ -185,18 +223,13 @@
     .heading {
         max-width: 764px;
         margin-top: 123px;
-        font-family: 'Prata',
-            'Roboto',
-            'Gill Sans',
-            'Gill Sans MT',
-            Calibri,
-            'Trebuchet MS',
-            sans-serif !important;
+        font-family: "Prata", "Roboto", "Gill Sans", "Gill Sans MT", Calibri,
+            "Trebuchet MS", sans-serif !important;
         font-style: normal;
         font-weight: 400;
         font-size: 3.375rem;
         line-height: 4.5625rem;
-        color: #FFFFFF;
+        color: #ffffff;
         z-index: 3;
     }
 }
@@ -227,18 +260,14 @@
     }
 
     .text {
-        font-family: 'Roboto',
-            'Gill Sans',
-            'Gill Sans MT',
-            Calibri,
-            'Trebuchet MS',
-            sans-serif !important;
+        font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri,
+            "Trebuchet MS", sans-serif !important;
         font-style: normal;
         font-weight: 400;
-        font-size: .9375rem;
+        font-size: 0.9375rem;
         line-height: 1.1875rem;
         color: #333333;
-        transition: height .13s ease;
+        transition: height 0.13s ease;
     }
 
     .about-img {
@@ -275,8 +304,6 @@
             }
         }
     }
-
-
 }
 
 .date {
@@ -286,15 +313,11 @@
 }
 
 .--date {
-    font-family: 'Roboto',
-        'Gill Sans',
-        'Gill Sans MT',
-        Calibri,
-        'Trebuchet MS',
+    font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif !important;
     font-style: normal;
     font-weight: 400;
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 1rem;
     color: $light-grey;
 }
@@ -306,15 +329,11 @@
 }
 
 .--location {
-    font-family: 'Roboto',
-        'Gill Sans',
-        'Gill Sans MT',
-        Calibri,
-        'Trebuchet MS',
+    font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif !important;
     font-style: normal;
     font-weight: 400;
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 1rem;
     color: $light-grey;
 }
@@ -335,22 +354,16 @@
     }
 
     .name {
-        font-family: 'Roboto',
-            'Gill Sans',
-            'Gill Sans MT',
-            Calibri,
-            'Trebuchet MS',
-            sans-serif !important;
+        font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri,
+            "Trebuchet MS", sans-serif !important;
         font-style: normal;
         font-weight: 400;
-        font-size: .875rem;
+        font-size: 0.875rem;
         line-height: 1rem;
         color: #999999;
         cursor: pointer;
     }
 }
-
-
 
 .reviews {
     margin-top: 144px;
@@ -373,12 +386,8 @@
         .text {
             margin-top: 52px;
             margin-bottom: 41px;
-            font-family: 'Roboto',
-                'Gill Sans',
-                'Gill Sans MT',
-                Calibri,
-                'Trebuchet MS',
-                sans-serif !important;
+            font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri,
+                "Trebuchet MS", sans-serif !important;
             font-style: normal;
             font-weight: 400;
             font-size: 1rem;
@@ -390,9 +399,9 @@
     // }
 }
 
-// Footer 
+// Footer
 
-@import './components/footer.scss';
+@import "./components/footer.scss";
 
 .mail-rating {
     width: 169px;
@@ -409,29 +418,27 @@
     align-items: start;
 }
 
+// Pages
 
-// Pages 
+@import "./pages/news.scss";
 
-@import './pages/news.scss';
+@import "./pages/news-detail.scss";
 
-@import './pages/news-detail.scss';
+@import "./pages/photo.scss";
 
-@import './pages/photo.scss';
+@import "./pages/expo.scss";
 
-@import './pages/expo.scss';
+@import "./pages/history.scss";
 
-@import './pages/history.scss';
+@import "./pages/prices.scss";
 
-@import './pages/prices.scss';
+@import "./pages/contacts.scss";
 
-@import './pages/contacts.scss';
+@import "./pages/r-centre.scss";
 
-@import './pages/r-centre.scss';
+// Responsive
 
-
-// Responsive 
-
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     html {
         font-size: 15px;
     }
@@ -456,7 +463,6 @@
             }
         }
     }
-
 
     .reviews {
         .review-card {
@@ -495,17 +501,20 @@
             margin-bottom: 30px;
         }
     }
-
-
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
+    .find-container {
+        .search-icon {
+            width: 30px;
+            height: 28px;
+        }
+    }
 
     .header {
         .logo {
             width: 100%;
             max-width: 210px;
-
         }
 
         .top-header {
@@ -546,7 +555,7 @@
                     display: flex;
                     align-items: center;
                     color: $blue;
-                    transition: color .13s ease;
+                    transition: color 0.13s ease;
 
                     &:hover {
                         color: $dark;
@@ -577,7 +586,6 @@
         width: 60px;
     }
 
-
     .second-swiper {
         display: block;
 
@@ -604,7 +612,7 @@
 
         background: none;
         border: none;
-        font-family: 'Prata' !important;
+        font-family: "Prata" !important;
         font-style: normal;
         font-weight: 400;
         font-size: 1rem;
@@ -613,14 +621,14 @@
         cursor: pointer;
         text-decoration: underline;
         text-decoration-color: rgba($color: #000, $alpha: 0);
-        transition: text-decoration-color .13s ease;
+        transition: text-decoration-color 0.13s ease;
 
         &:hover {
             text-decoration-color: #000000;
         }
 
         span {
-            color: #9F0000;
+            color: #9f0000;
         }
     }
 
@@ -634,7 +642,6 @@
 
     .footer {
         .top-footer {
-
             .top-content {
                 justify-content: space-evenly;
 
@@ -743,14 +750,11 @@
                 text-align: center;
             }
         }
-
-
     }
 
-    // News Detail 
+    // News Detail
 
     .news-detail {
-
         .swiper {
             max-height: none;
         }
@@ -769,7 +773,6 @@
 
     .expo {
         .menu-list {
-
             flex-wrap: wrap;
             row-gap: 10px;
 
@@ -780,7 +783,6 @@
         }
 
         .swiper {
-
             img {
                 max-width: none;
             }
@@ -788,7 +790,7 @@
     }
 }
 
-@media (max-width:620px) {
+@media (max-width: 620px) {
     .banner {
         min-height: 410px;
 
@@ -801,16 +803,42 @@
         background-position: center;
     }
 
-    .about-mus {}
-
-
+    .about-mus {
+    }
 
     .text {
         font-size: 15px !important;
     }
 }
 
-@media (max-width:425px) {
+@media (max-width: 425px) {
+    .find-container {
+        input {
+            font-weight: 400;
+            font-size: 12px !important;
+            line-height: 15px !important;
+        }
+    }
+
+    .burger-menu {
+        .burger-nav-list {
+            row-gap: 20px;
+            .burger-nav-item {
+                max-width: 200px;
+                .burger-nav-link {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 11px !important;
+                    line-height: 13px !important;
+                    text-align: center;
+                }
+            }
+        }
+        .search-icon {
+            width: 30px;
+            height: 28px;
+        }
+    }
 
     .header {
         .logo {
@@ -823,7 +851,6 @@
             .nav-link {
                 font-size: 11px;
             }
-
         }
 
         .burger {
@@ -873,7 +900,6 @@
             }
 
             .bottom-content {
-
                 .logo {
                     width: 100%;
                     max-width: 265px;
@@ -892,11 +918,9 @@
         }
     }
 
-
     .about-mus {
         margin-top: 68px;
         margin-bottom: 80px;
-
     }
 
     .title {
@@ -909,7 +933,6 @@
         font-size: 11px !important;
         line-height: 20px !important;
     }
-
 
     .preview {
         margin-bottom: 98px;
@@ -948,16 +971,13 @@
         margin-bottom: 85px;
     }
 
-
-
-
     // R-center
 
     .r-center .swiper-slide .image {
         aspect-ratio: 1 / 1;
     }
 
-    // History 
+    // History
 
     .history {
         p.hide-content {

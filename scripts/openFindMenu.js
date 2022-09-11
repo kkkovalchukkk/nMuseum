@@ -1,18 +1,35 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const btnToggleFind = document.querySelectorAll('.toggle-find-btn');
-    const findWindow = document.querySelector('.find-container');
+window.addEventListener("DOMContentLoaded", () => {
+    $(".burger").click((e) => {
+        $("body").toggleClass("overflow");
+        $(".burger-menu").toggleClass("open");
+        $(".burger-menu").slideToggle();
+    });
 
-    btnToggleFind.forEach(b => {
-        b.addEventListener('click', () => {
-            findWindow.classList.toggle('hidden')
+    const findWindow = document.querySelector(".find-container");
+
+    document.querySelectorAll(".toggle-find-btn").forEach((b) => {
+        b.addEventListener("click", () => {
+            if (
+                document
+                    .querySelector(".burger-menu")
+                    .classList.contains("open")
+            ) {
+                $(".burger-menu").toggleClass("open");
+                findWindow.classList.toggle("hidden");
+                document.querySelector(".burger").classList.toggle("opened");
+                $(".burger-menu").slideToggle();
+                $("body").toggleClass("overflow");
+            } else {
+                findWindow.classList.toggle("hidden");
+            }
         });
     });
 
-    window.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-            if (!findWindow.classList.contains('hidden')) {
-                findWindow.classList.add('hidden')                
-            };
+    window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            if (!findWindow.classList.contains("hidden")) {
+                findWindow.classList.add("hidden");
+            }
         }
     });
-})
+});
