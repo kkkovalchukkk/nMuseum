@@ -1,6 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
     $(".burger").click((e) => {
         $("body").toggleClass("overflow");
+        $("body").toggleClass("fixed");
         $(".burger-menu").toggleClass("open");
         $(".burger-menu").slideToggle();
     });
@@ -19,6 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 document.querySelector(".burger").classList.toggle("opened");
                 $(".burger-menu").slideToggle();
                 $("body").toggleClass("overflow");
+                $("body").toggleClass("fixed");
             } else {
                 findWindow.classList.toggle("hidden");
             }

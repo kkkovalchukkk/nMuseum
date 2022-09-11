@@ -1097,6 +1097,7 @@ template {
 .burger-menu {
   width: 100%;
   height: 100vh;
+  max-height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1136,6 +1137,14 @@ template {
 
 .overflow {
   overflow-y: hidden;
+}
+
+.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .banner {
