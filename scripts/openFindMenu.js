@@ -31,6 +31,7 @@ window.addEventListener("DOMContentLoaded", () => {
         if (e.key === "Escape") {
             if (!findWindow.classList.contains("hidden")) {
                 findWindow.classList.add("hidden");
+                $("body").toggleClass("fixed");
             }
         }
     });

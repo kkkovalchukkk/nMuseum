@@ -2227,9 +2227,6 @@ template {
   .see-more-btn span {
     color: #9f0000;
   }
-  .hide-content {
-    display: none;
-  }
   .hide {
     display: none !important;
   }

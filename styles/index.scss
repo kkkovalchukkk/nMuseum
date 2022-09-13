@@ -26,6 +26,9 @@
     display: none;
 }
 
+// p.hide-content {
+//     display: inline-block !important;
+// }
 // Icons
 
 @import "./components/icons.scss";
@@ -639,10 +642,6 @@
         span {
             color: #9f0000;
         }
-    }
-
-    .hide-content {
-        display: none;
     }
 
     .hide {
