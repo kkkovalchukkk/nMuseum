@@ -2295,7 +2295,6 @@ template {
   }
   .history .page-list {
     flex-direction: column;
-    margin-bottom: 47px;
     row-gap: 6px;
   }
   .history .page-list .page-item {
