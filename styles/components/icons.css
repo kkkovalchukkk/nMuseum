@@ -90,4 +90,10 @@
 .next-icon {
   width: 45px;
   height: 20px;
+}
+
+.pushkin-icon {
+  width: 143px;
+  height: 40px;
+  background-image: url(/assets/icons/pushkin-icon.png);
 }/*# sourceMappingURL=icons.css.map */
