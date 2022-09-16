@@ -5,66 +5,27 @@
 .contacts .title--litle {
   margin-bottom: 2.1875rem;
 }
-.contacts .team-table {
-  width: 100%;
-  margin-bottom: 9.4375rem;
-  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+.contacts .telnumber {
+  display: inline-block;
 }
-.contacts .team-table td {
-  border: 1px solid #D9D9D9;
-}
-.contacts .team-table .name-title {
-  width: 27.75rem;
-  height: 4.0625rem;
-  vertical-align: middle;
-  background-color: #d9d9d9;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.1875rem;
-  text-align: center;
-  color: #1B1B1B;
-}
-.contacts .team-table .name-value {
-  width: 27.75rem;
-  height: 4.1875rem;
-  font-family: "Roboto" !important;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.1875rem;
-  text-align: center;
-  vertical-align: middle;
-  color: #1B1B1B;
-}
-.contacts .team-table .who-title {
-  width: 25.4375rem;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.1875rem;
-  color: #5F7489;
-  text-align: center;
+.contacts .telnumber .tel-icon {
+  margin-right: 10px;
   vertical-align: middle;
 }
-.contacts .team-table .contacts-title {
-  width: 25.4375rem;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.1875rem;
-  color: #5F7489;
-  text-align: center;
+.contacts .mail {
+  display: inline-block;
+}
+.contacts .mail .mail-icon {
+  margin-right: 10px;
   vertical-align: middle;
 }
-.contacts .team-table .value {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.1875rem;
-  text-align: center;
-  vertical-align: middle;
-  color: #1B1B1B;
+.contacts .contact {
+  margin-bottom: 88px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 88px;
 }
 .contacts .content {
   width: 100%;
@@ -125,7 +86,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: background-color 0.13s ease;
 }
 .contacts .content .buy-btn:hover {
