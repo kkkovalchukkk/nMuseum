@@ -913,6 +913,18 @@
             font-size: 12px;
         }
     }
+
+    // Contacts
+
+    .contacts {
+        .contact {
+            margin-bottom: 53px;
+            gap: 24px;
+        }
+        .content {
+            margin-bottom: 74px;
+        }
+    }
 }
 
 @media (max-width: 675px) {

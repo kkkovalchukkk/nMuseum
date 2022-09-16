@@ -2462,6 +2462,13 @@ template {
   .prices .free-ticket {
     font-size: 12px;
   }
+  .contacts .contact {
+    margin-bottom: 53px;
+    gap: 24px;
+  }
+  .contacts .content {
+    margin-bottom: 74px;
+  }
 }
 @media (max-width: 675px) {
   .r-center .vol-list {
