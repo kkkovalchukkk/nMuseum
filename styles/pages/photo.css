@@ -81,6 +81,14 @@
 .gallery .photo-list .photo-item .see-all svg circle {
   stroke: #999;
 }
+.gallery .photo-list .photo-item .date {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+}
 .gallery .load-btn {
   margin-top: 139px;
   margin-bottom: 91px;

@@ -653,6 +653,10 @@
                     height: 30px;
                 }
 
+                .pushkin-icon {
+                    width: 120px;
+                }
+
                 .nav-link {
                     display: flex;
                     align-items: center;
@@ -861,6 +865,9 @@
                     font-size: 17px;
                     line-height: 23px;
                 }
+                .date {
+                    margin-top: 18px;
+                }
             }
         }
 
@@ -900,6 +907,13 @@
                 background: #ededed;
                 text-align: center;
             }
+        }
+        .text {
+            margin-bottom: 15px;
+        }
+        .see-more-btn {
+            font-size: 12px;
+            margin-bottom: 0;
         }
     }
 
@@ -964,6 +978,9 @@
         .free-ticket {
             font-size: 12px;
         }
+        .see-more-btn {
+            font-size: 14px;
+        }
     }
 
     // Contacts
@@ -1026,12 +1043,23 @@
         .logo {
             max-width: 152px;
         }
+        .top-header {
+        }
 
         .bottom-header {
             height: 59px;
 
             .nav-link {
                 font-size: 11px;
+            }
+            .second-nav-list {
+                width: 100%;
+                justify-content: space-between;
+                gap: 20px;
+                .pushkin-icon {
+                    width: 96px;
+                    height: 27px;
+                }
             }
         }
 
@@ -1207,6 +1235,9 @@
                 text-align: center;
             }
         }
+        .event {
+            font-size: 12px !important;
+        }
 
         .offer-table {
             td {
@@ -1214,7 +1245,7 @@
             }
         }
         .text {
-            font-size: 11px;
+            font-size: 12px;
             line-height: 15px;
             margin-bottom: 51px;
         }
@@ -1222,6 +1253,9 @@
         .free-ticket {
             font-size: 11px !important;
             line-height: 13px;
+        }
+        .see-more-btn {
+            font-size: 12px !important;
         }
     }
 }

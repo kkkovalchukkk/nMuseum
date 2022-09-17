@@ -1646,6 +1646,14 @@ template {
 .gallery .photo-list .photo-item .see-all svg circle {
   stroke: #999;
 }
+.gallery .photo-list .photo-item .date {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+}
 .gallery .load-btn {
   margin-top: 139px;
   margin-bottom: 91px;
@@ -1738,17 +1746,13 @@ template {
 }
 .history .text {
   max-width: 54.375rem;
-  margin-top: 3.75rem;
-  margin-bottom: 14rem;
+  margin-bottom: 26px;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.1875rem;
   color: #1B1B1B;
   text-align: justify;
-}
-.history .text {
-  margin: 0;
 }
 .history .see-more-btn {
   display: none;
@@ -1898,8 +1902,8 @@ template {
   margin-bottom: 3.3125rem;
   font-family: "Prata" !important;
   font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.6875rem;
+  font-size: 16px;
+  line-height: 38px;
   color: #1B1B1B;
 }
 .prices .subheading {
@@ -2294,6 +2298,9 @@ template {
     width: 22px;
     height: 30px;
   }
+  .header .bottom-header .second-nav-list .pushkin-icon {
+    width: 120px;
+  }
   .header .bottom-header .second-nav-list .nav-link {
     display: flex;
     align-items: center;
@@ -2458,6 +2465,9 @@ template {
     font-size: 17px;
     line-height: 23px;
   }
+  .gallery .photo-list .photo-item .date {
+    margin-top: 18px;
+  }
   .gallery .load-btn {
     margin-top: 43px;
     margin-bottom: 65px;
@@ -2483,6 +2493,13 @@ template {
     width: 100%;
     max-width: none;
     text-align: center;
+  }
+  .history .text {
+    margin-bottom: 15px;
+  }
+  .history .see-more-btn {
+    font-size: 12px;
+    margin-bottom: 0;
   }
   .news-detail .swiper {
     max-height: none;
@@ -2519,6 +2536,9 @@ template {
   }
   .prices .free-ticket {
     font-size: 12px;
+  }
+  .prices .see-more-btn {
+    font-size: 14px;
   }
   .contacts .contact {
     margin-bottom: 53px;
@@ -2571,6 +2591,15 @@ template {
   }
   .header .bottom-header .nav-link {
     font-size: 11px;
+  }
+  .header .bottom-header .second-nav-list {
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .header .bottom-header .second-nav-list .pushkin-icon {
+    width: 96px;
+    height: 27px;
   }
   .header .burger svg {
     width: 35px !important;
@@ -2690,11 +2719,14 @@ template {
     line-height: 11px !important;
     text-align: center;
   }
+  .prices .event {
+    font-size: 12px !important;
+  }
   .prices .offer-table td {
     font-size: 9px !important;
   }
   .prices .text {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 15px;
     margin-bottom: 51px;
   }
@@ -2702,5 +2734,8 @@ template {
 .prices .free-ticket {
     font-size: 11px !important;
     line-height: 13px;
+  }
+  .prices .see-more-btn {
+    font-size: 12px !important;
   }
 }/*# sourceMappingURL=index.css.map */
