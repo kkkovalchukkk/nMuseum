@@ -1401,7 +1401,7 @@ template {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 128.19%;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: underline;
   -webkit-text-decoration-color: rgba(0, 0, 0, 0);
           text-decoration-color: rgba(0, 0, 0, 0);
@@ -1430,7 +1430,7 @@ template {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 0.875rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer .top-footer .top-content address .tel,
 .footer .top-footer .top-content address .mail {
@@ -1439,7 +1439,7 @@ template {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 0.875rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .footer .title {
   margin-bottom: 20px;
@@ -1451,8 +1451,16 @@ template {
   color: #fff;
 }
 .footer .bottom-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 18.25px;
   margin-bottom: 57.99px;
+}
+.footer .bottom-content address,
+.footer .bottom-content .mail-rating {
+  display: none;
 }
 .footer .bottom-footer .wrapper {
   position: relative;
@@ -1496,7 +1504,7 @@ template {
   font-size: 0.75rem;
   line-height: 0.875rem;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   z-index: 1;
 }
 
@@ -2185,6 +2193,23 @@ template {
     max-width: 240px;
     text-align: left;
   }
+  .footer .top-footer .bottom-content {
+    flex-direction: column-reverse;
+    align-items: flex-start !important;
+    gap: 16px;
+  }
+  .footer .top-footer .bottom-content .mus-history-logo {
+    width: 201px;
+    height: 36px;
+  }
+  .footer .top-footer .bottom-content .izi-travel-logo {
+    width: 152px;
+    height: 36px;
+  }
+  .footer .top-footer .bottom-content .patriot-logo {
+    width: 64px;
+    height: 76px;
+  }
   .expo .menu-list {
     margin-top: 0px;
     margin-bottom: 30px;
@@ -2350,23 +2375,30 @@ template {
     display: none !important;
   }
   .footer .top-footer .top-content {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
-  .footer .top-footer .top-content .socials-list {
-    margin-left: auto;
+  .footer .top-footer .top-content .social-link {
+    width: 47px;
+    height: 47px;
   }
-  .footer .top-footer .left-side {
+  .footer .top-footer .top-content .title {
+    white-space: nowrap;
+    font-size: 17px !important;
+    line-height: 20px !important;
+  }
+  .footer .top-footer .top-content .left-side {
     width: auto !important;
     flex-direction: column;
   }
-  .footer .top-footer .left-side .title {
+  .footer .top-footer .top-content .left-side .title {
     margin-bottom: 35px;
   }
-  .footer .top-footer address,
-.footer .top-footer .mail-rating {
+  .footer .top-footer .top-content address,
+.footer .top-footer .top-content .mail-rating {
     display: none !important;
   }
-  .footer .top-footer .socials-list {
+  .footer .top-footer .top-content .socials-list {
+    margin-left: auto;
     flex-direction: column;
     gap: 25px;
   }
@@ -2377,6 +2409,32 @@ template {
     justify-content: center;
     margin-top: 56px;
     margin-bottom: 56px;
+  }
+  .footer .top-footer .bottom-content address,
+.footer .top-footer .bottom-content .mail-rating {
+    display: inline-block;
+  }
+  .footer .top-footer .bottom-content address {
+    margin-bottom: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+    font-family: "Roboto", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    color: #ffffff;
+  }
+  .footer .top-footer .bottom-content address .tel,
+.footer .top-footer .bottom-content address .mail {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    color: #ffffff;
   }
   .footer .bottom-footer .wrapper {
     flex-direction: column-reverse;
@@ -2544,18 +2602,13 @@ template {
   .swp-button svg {
     width: 40px !important;
   }
-  .footer .top-footer .top-content .social-link {
-    width: 47px;
-    height: 47px;
-  }
-  .footer .top-footer .top-content .title {
-    white-space: nowrap;
-    font-size: 17px !important;
-    line-height: 20px !important;
-  }
   .footer .top-footer .bottom-content .logo {
     width: 100%;
     max-width: 265px;
+  }
+  .footer .top-footer .bottom-content .patriot-link {
+    position: absolute;
+    right: 30px;
   }
   .breadcrumb {
     margin-top: 36px;
